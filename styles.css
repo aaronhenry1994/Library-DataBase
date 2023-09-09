@@ -1,3 +1,7 @@
+body {
+    background-color: slategray;
+}
+
 .title {
     display: flex;
     justify-content: center;
@@ -21,6 +25,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1rem;
     background-color: beige;
+    width: 200px;
 }
 
 .bigBoyDiv {
@@ -29,7 +34,7 @@
     width: fit-content;
     height: fit-content;
     border: 1px solid black;
-    grid-template-columns: repeat(5, minmax(200px, 250px));
+    grid-template-columns: repeat(5, minmax(250px, 300px));
     grid-template-rows: repeat(2, 1fr);
     padding: 10px;
     gap: 10px;
@@ -37,6 +42,9 @@
 }
 
 .library-books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
     height: 100px;
     position: relative;
@@ -53,8 +61,11 @@
     background-color: lightcoral;
     width: 30px;
     height: 30px;
+    position: relative;
 }
 
 .checkBox {
-    position: relative;
+    display: flex;
+    align-items: center;
+    position: inherit;
 }

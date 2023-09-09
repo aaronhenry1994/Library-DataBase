@@ -71,6 +71,7 @@ function addLibraryToPage(myLibrary) {
         let label = document.createElement('label');
         label.htmlFor = 'deleteSelector';
         newDiv.appendChild(label);
+        newDiv.appendChild(checkBox);
 
         massDeleteBtn.addEventListener('click', function() {
             console.log('Last thing to add')
@@ -79,9 +80,6 @@ function addLibraryToPage(myLibrary) {
                 newDiv.remove();
             }
         });
-
-
-        newDiv.appendChild(checkBox);
     }
 };
 
@@ -108,6 +106,10 @@ function addEntryToPage(bookData) {
         newDiv.appendChild(newEntryDiv);
         newContainerDiv.appendChild(newDiv);
 
+        const checkBox = document.createElement('input');
+        checkBox.classList.add('checkBox');
+        newEntryDiv.appendChild(checkBox);
+
         const deleteBtn = document.createElement('button');
         deleteBtn.textContent = 'X';
         deleteBtn.classList.add('delete-button');
@@ -125,10 +127,6 @@ function addEntryToPage(bookData) {
                 newEntryDiv.remove();
             }
         });
-
-        const checkBox = document.createElement('input');
-        checkBox.classList.add('checkBox');
-        newEntryDiv.appendChild(checkBox);
 
         // Assigning values to the checkbox
         checkBox.type = 'checkbox';
@@ -168,11 +166,6 @@ console.log(toSleep.title)
 const king = new Book("Return of the King", "Tolkein", "300", "No")
 
 const dragon = new Book('Eragon', 'Christopher Paolini', '250', 'Yes');
-
-addBookToLibrary(toSleep);
-addBookToLibrary(king);
-addBookToLibrary(dragon);
-
 
 addLibraryToPage(myLibrary);
 
