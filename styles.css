@@ -1,0 +1,60 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid burlywood;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    background-color: beige;
+}
+
+.bigBoyDiv {
+    display: grid;
+    overflow: auto;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    grid-template-columns: repeat(5, minmax(200px, 250px));
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+    gap: 10px;
+    background-color: beige;
+}
+
+.library-books {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    padding: 10px;
+}
+
+:modal {
+    background-color: beige;
+    border: 2px solid burlywood;
+    border-radius: 5px;
+}
+
+.delete-button {
+    background-color: lightcoral;
+    width: 30px;
+    height: 30px;
+}
+
+.checkBox {
+    position: relative;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title"><h1>Library Database</h1></div>
+    <div class="button-box">
+        <button class="openButton">Add Book to Library</button>
+        <button class="massDelete">Delete from Library</button>
+    </div>
+        <dialog class="dialogBox">
+           <form action="main.js">
+            <p>
+                <label for="">
+                    <div>
+                        <label for="title">Title:</label>
+                        <input class="input" type="text" id="title" placeholder="To Sleep in a Sea of Stars" name="title"></div>
+                    <div>
+                        <label for="author">Author:</label>
+                        <input class="input" type="text" id="author" placeholder="Christopher Paolini" name="author">
+                    </div>
+                    <div>
+                        <label for="pages">Pages:</label>
+                        <input class="input" type="number" id="pages" placeholder="400" name="pages">
+                    </div>
+                    <div>
+                        <label for="select">Read:</label>
+                        <select name="select" id="select">
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                </label>
+            </p>
+            <div>
+                <button class="cancelBtn" value="cancel" type="button" formmethod="dialog">Cancel</button>
+                <button id="confirmBtn" value="submit">Confirm</button>
+            </div>
+           </form>
+        </dialog>
+    <div class="output"></div>
+</body>
+<script src="main.js"></script>
+</html>
